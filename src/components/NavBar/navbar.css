@@ -1,3 +1,98 @@
-*{
+.navbar{
+    background: #FFFFFF;
+    height:5rem;
+    width:100vw;
+    margin:0 ;
+    padding:1rem 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index:3;
+    bottom: 10px;
+    box-shadow: 10px 10px 15px #D3D3D3 ;
+}
+.logo{
+    object-fit: cover;
+    height:5rem;
+    width:9rem;
+}
+
+.itemList{
+    margin:1rem;
+    cursor:pointer;
+}
+.itemList:hover{
+    color:#3581C4;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #3581C4;
+}
+
+.button{
     color:white;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.button:hover{
+    background-color:#3581C4;
+    cursor:pointer;
+    
+
+}
+
+.iconImage{
+    color: white;
+    margin-left: 5px;
+}
+
+.active{
+    color:#3581C4;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #3581C4;
+}
+
+.navMenu{
+    position: absolute;
+    top:4rem;
+    right:2rem;
+    z-index:2;
+    display:flex;
+    flex-direction: column;
+    padding:0.5rem;
+    height:fit-content;
+    min-width: 15rem;
+    background: whitesmoke;
+    border-radius: 1rem;
+}
+
+.NewitemList{
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+
+}
+
+.mobMenu{
+    display:none;
+}
+
+@media screen and (max-width:720px){
+    .mobMenu{
+        display:flex;
+    }
+
+    .menu{
+        display:none;
+    }
+    .button{
+        display:none;
+    }
+
 }
